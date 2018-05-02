@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Wikipedia Viewer</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Playfair Display">
+</head>
+
+<body>
+  <div class="bordered" style="margin: 5px 30% 5px 30%">
+    <h1>Wikipedia Viewer</h1>
+    <h4>a freecodecamp project</h4>
+  </div>
+  <div class="bordered">
+    <row class="flex">
+      <div style="margin: 1% 20% 1% 20%;">
+        <a id="random" target="_blank" href='' style="color:black; line-height: 1.5;"></a>
+      </div>
+      <div style="margin: 1% 20% 1% 20%;">
+        <input type="text" id="searchbox" style="width: 120px; border-radius: 4px; padding: 5px; margin: 2px;"></input>
+        <button id="searchbtn" onclick="getsearch()" style="margin: 2px; padding: 5px;">Search</button>
+        <button id="clearbtn" style="margin: 2px; padding: 5px;">Clear</button>
+      </div>
+    </row>
+  </div>
+<div>
+  <div id="display-result">
+  </div>
+</div>
+  
+</body>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
