@@ -17,7 +17,8 @@ $(document).ready(function(){
   $("#searchbtn").click(function() {
     var x = document.getElementById("searchbox").value;
     var searchurl = "https://en.wikipedia.org/w/api.php?origin=*&action=opensearch&search="+x+"&limit=10&format=json&jsonp?";
-    $.getJSON(searchurl,function(json){             document.getElementById("display-result").classList.add('bordered');
+    $.getJSON(searchurl,function(json){
+      document.getElementById("display-result").classList.add('bordered');
       $("#display-result").text("");
       $("#display-result").css("padding","1%");
       if(JSON.stringify(json[1])=="[]"){
@@ -27,6 +28,7 @@ $(document).ready(function(){
         $("#display-result").append("<h3>Please enter a search term.</h3>");
       }
       else{
+          // If there are results, only display the first 10 -- MAYBE MAKE THIS A SELECTABLE OPTION IN THE FUTURE? (10, 25, 50...)
       for (var i=0;i<=9;i++){       
       $("#display-result").append("<a href="+JSON.stringify(json[3][i])+"target=\"_blank\">"+"<h3>"+JSON.stringify(json[1][i]).replace(/\"/g,"")+"</h3></a>");        
         $("#display-result").append(JSON.stringify(json[2][i]).replace(/\"/g,""));
