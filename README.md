@@ -6,6 +6,11 @@ Built using the Wikipedia API. Users can search Wikipedia from this single page 
 
 [logo]: https://github.com/tylerkkp/wiki-viewer/blob/master/wiki-viewer.jpg "screen shot"
 
+#### Technology Used
+* HTML
+* CSS
+* Javascript
+
 Site can be viewed at [Github Pages](https://www.tkkp.dev/wiki-viewer/)
 
 Built using [Codepen.io](https://codepen.io/tylerkkp/pen/wmVOLR)
